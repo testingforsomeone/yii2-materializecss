@@ -6,7 +6,7 @@
     <meta name="language" content="en" />
         <link href="./assets/936b3706/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/1df9fa34/solarized_light.css" rel="stylesheet">
-<link href="./assets/bc90c131/style.css" rel="stylesheet">
+<link href="./assets/ee6d4738/style.css" rel="stylesheet">
 <script src="./assets/ba5c5eb/jquery.js"></script>
 <script src="./assets/936b3706/js/bootstrap.js"></script>
 <script src="./assets/3a66db3c/jssearch.js"></script>    <title>Nav, macgyer\yii2materializecss\widgets\Nav - yii2-materializecss API Documentation</title>
@@ -78,9 +78,31 @@ yii\base\Widget</td></tr>
                             </table>
 
 <div class="class-description">
-    <p><strong>Class Nav</strong></p>
-    
-    </div>
+    <p><strong>Nav renders a navigation items list.</strong></p>
+    <pre><code class="hljs php language-php"><span class="hljs-keyword">echo</span> Nav::widget([
+    <span class="hljs-string">'items'</span> =&gt; [
+        [
+            <span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Home'</span>,
+            <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/index'</span>],
+            <span class="hljs-string">'linkOptions'</span> =&gt; [...],
+        ],
+        [
+            <span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Dropdown'</span>,
+            <span class="hljs-string">'items'</span> =&gt; [
+                 [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Level 1 - Dropdown A'</span>, <span class="hljs-string">'url'</span> =&gt; <span class="hljs-string">'#'</span>],
+                 [<span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Level 1 - Dropdown B'</span>, <span class="hljs-string">'url'</span> =&gt; <span class="hljs-string">'#'</span>],
+            ],
+        ],
+        [
+            <span class="hljs-string">'label'</span> =&gt; <span class="hljs-string">'Login'</span>,
+            <span class="hljs-string">'url'</span> =&gt; [<span class="hljs-string">'site/login'</span>],
+            <span class="hljs-string">'visible'</span> =&gt; Yii::<span class="hljs-variable">$app</span>-&gt;user-&gt;isGuest
+        ],
+    ],
+]);
+</code></pre>
+
+    <p>See also <a href="http://materializecss.com/navbar.html">http://materializecss.com/navbar.html</a>.</p></div>
 
 <a id="properties"></a>
 
@@ -303,7 +325,7 @@ which is displayed next to the button text to indicate the drop down functionali
 Defaults to <code>null</code> which means <code>&lt;i class="material-icons right"&gt;arrow_drop_down&lt;/i&gt;</code> will be used.
 To disable the caret, set this property to be an empty string.</p>
 
-            </div>
+        <p>See also <a href="http://materializecss.com/navbar.html#navbar-dropdown">http://materializecss.com/navbar.html#navbar-dropdown</a>.</p>    </div>
 
     <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="macgyer-yii2materializecss-widgets-nav.html#$dropDownCaret-detail">$dropDownCaret</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
 
@@ -513,7 +535,7 @@ be considered active.</p>
 
         <p>This method is called to create sub-menus.</p>
 
-            </div>
+        <p>See also <a href="http://materializecss.com/navbar.html#navbar-dropdown">http://materializecss.com/navbar.html#navbar-dropdown</a>.</p>    </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
         <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="macgyer-yii2materializecss-widgets-nav.html#renderDropdown()-detail">renderDropdown</a></strong> ( <span style="color: #0000BB">$items</span>, <span style="color: #0000BB">$parentItem</span>, <span style="color: #0000BB">$targetId</span> )</td></tr>
@@ -672,7 +694,7 @@ be considered active.</p>
 
 <footer class="footer">
     <div class="wrap">
-                <p class="pull-right"><small>Page generated on Sun, 05 Jun 2016 18:09:40 +0000</small></p>
+                <p class="pull-right"><small>Page generated on Mon, 06 Jun 2016 20:22:03 +0000</small></p>
         Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>    </div>
 </footer>
 
