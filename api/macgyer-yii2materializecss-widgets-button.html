@@ -55,6 +55,7 @@
 <a class="list-group-item" href="#navigation-44" data-toggle="collapse" data-parent="#navigation">macgyer\yii2materializecss\widgets\form <b class="caret"></b></a><div id="navigation-44" class="submenu panel-collapse collapse"><a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-activefield.html">ActiveField</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-activeform.html">ActiveForm</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-datepicker.html">DatePicker</a>
+<a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-submitbutton.html">SubmitButton</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-switchbutton.html">SwitchButton</a></div>
 <a class="list-group-item" href="#navigation-45" data-toggle="collapse" data-parent="#navigation">macgyer\yii2materializecss\widgets\grid <b class="caret"></b></a><div id="navigation-45" class="submenu panel-collapse collapse"><a class="list-group-item" href="./macgyer-yii2materializecss-widgets-grid-actioncolumn.html">ActionColumn</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-grid-gridview.html">GridView</a></div></div>    </div>
@@ -64,7 +65,8 @@
     <a href="index.html">All Classes</a>
             | <a href="#properties">Properties</a>
                 | <a href="#methods">Methods</a>
-            </div>
+                    | <a href="#constants">Constants</a>
+    </div>
 
 <table class="summaryTable docClass table table-bordered">
     <colgroup>
@@ -75,10 +77,11 @@
 <a href="macgyer-yii2materializecss-lib-basewidget.html">macgyer\yii2materializecss\lib\BaseWidget</a> &raquo;
 yii\base\Widget</td></tr>
                         <tr><th>Uses Traits</th><td><a href="macgyer-yii2materializecss-lib-materializewidgettrait.html">macgyer\yii2materializecss\lib\MaterializeWidgetTrait</a></td></tr>
-                            </table>
+                <tr><th>Subclasses</th><td><a href="macgyer-yii2materializecss-widgets-form-submitbutton.html">macgyer\yii2materializecss\widgets\form\SubmitButton</a></td></tr>
+                        </table>
 
 <div class="class-description">
-    <p><strong>Button renders a HTML button.</strong></p>
+    <p><strong>Button renders an HTML button.</strong></p>
     <p>There are three main button types described in Materialize.</p>
 <ul>
 <li>the raised button is a standard button that signifies actions and seek to give depth to a mostly flat page</li>
@@ -118,6 +121,12 @@ yii\base\Widget</td></tr>
         <td>The options for the underlying Materialize JS plugin.</td>
         <td><a href="macgyer-yii2materializecss-lib-materializewidgettrait.html">macgyer\yii2materializecss\lib\MaterializeWidgetTrait</a></td>
     </tr>
+            <tr id="$disabled">
+        <td><a href="macgyer-yii2materializecss-widgets-button.html#$disabled-detail">$disabled</a></td>
+        <td>bool</td>
+        <td>Whether the button shall be disabled.</td>
+        <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
+    </tr>
             <tr id="$encodeLabel">
         <td><a href="macgyer-yii2materializecss-widgets-button.html#$encodeLabel-detail">$encodeLabel</a></td>
         <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
@@ -136,6 +145,12 @@ yii\base\Widget</td></tr>
         <td>The label on the button.</td>
         <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
     </tr>
+            <tr id="$large">
+        <td><a href="macgyer-yii2materializecss-widgets-button.html#$large-detail">$large</a></td>
+        <td>bool</td>
+        <td>Whether the button shall be of larger size.</td>
+        <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
+    </tr>
             <tr class="inherited" id="$options">
         <td><a href="macgyer-yii2materializecss-lib-basewidget.html#$options-detail">$options</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
@@ -146,6 +161,12 @@ yii\base\Widget</td></tr>
         <td><a href="macgyer-yii2materializecss-widgets-button.html#$tagName-detail">$tagName</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
         <td>The tag used to render the button.</td>
+        <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
+    </tr>
+            <tr id="$type">
+        <td><a href="macgyer-yii2materializecss-widgets-button.html#$type-detail">$type</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The type of button to be rendered.</td>
         <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
     </tr>
     </table>
@@ -215,10 +236,65 @@ yii\base\Widget</td></tr>
 <a id="events"></a>
 
 <a id="constants"></a>
+<div class="summary doc-const">
+    <h2>Constants</h2>
+
+    <p><a href="#" class="toggle">Hide inherited constants</a></p>
+
+    <table class="summary-table table table-striped table-bordered table-hover">
+    <colgroup>
+        <col class="col-const" />
+        <col class="col-value" />
+        <col class="col-description" />
+        <col class="col-defined" />
+    </colgroup>
+    <tr>
+        <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
+    </tr>
+            <tr id="TYPE_FLAT">
+          <td id="TYPE_FLAT-detail">TYPE_FLAT</td>
+          <td>'flat'</td>
+          <td>Sets the <a href="macgyer-yii2materializecss-widgets-button.html#$type-detail">$type</a> of the button to "flat".
+</td>
+          <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
+        </tr>
+            <tr id="TYPE_FLOATING">
+          <td id="TYPE_FLOATING-detail">TYPE_FLOATING</td>
+          <td>'floating'</td>
+          <td>Sets the <a href="macgyer-yii2materializecss-widgets-button.html#$type-detail">$type</a> of the button to "floating".
+</td>
+          <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
+        </tr>
+            <tr id="TYPE_RAISED">
+          <td id="TYPE_RAISED-detail">TYPE_RAISED</td>
+          <td>'raised'</td>
+          <td>Sets the <a href="macgyer-yii2materializecss-widgets-button.html#$type-detail">$type</a> of the button to "raised". This is the default.
+</td>
+          <td><a href="macgyer-yii2materializecss-widgets-button.html">macgyer\yii2materializecss\widgets\Button</a></td>
+        </tr>
+        </table>
+</div>
 
 <h2>Property Details</h2>
 
 <div class="property-doc">
+
+    <div class="detail-header h3" id="$disabled-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="macgyer-yii2materializecss-widgets-button.html#$disabled-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $disabled        <span class="detail-header-tag small">
+            public                                                property
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p>Whether the button shall be disabled.</p>
+
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type">bool</span> <a href="macgyer-yii2materializecss-widgets-button.html#$disabled-detail">$disabled</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
+
 
     <div class="detail-header h3" id="$encodeLabel-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
@@ -271,11 +347,28 @@ yii\base\Widget</td></tr>
     </div>
 
     <div class="doc-description">
-        <p>The label on the button.</p>
+        <p>The label on the button. If you do not want a label text to be rendered, set this options to "false".</p>
 
             </div>
 
     <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="macgyer-yii2materializecss-widgets-button.html#$label-detail">$label</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Button'</span></div>
+
+
+    <div class="detail-header h3" id="$large-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="macgyer-yii2materializecss-widgets-button.html#$large-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $large        <span class="detail-header-tag small">
+            public                                                property
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p>Whether the button shall be of larger size.</p>
+
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type">bool</span> <a href="macgyer-yii2materializecss-widgets-button.html#$large-detail">$large</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
 
 
     <div class="detail-header h3" id="$tagName-detail">
@@ -293,6 +386,31 @@ yii\base\Widget</td></tr>
             </div>
 
     <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="macgyer-yii2materializecss-widgets-button.html#$tagName-detail">$tagName</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'button'</span></div>
+
+
+    <div class="detail-header h3" id="$type-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="macgyer-yii2materializecss-widgets-button.html#$type-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $type        <span class="detail-header-tag small">
+            public                                                property
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p>The type of button to be rendered.</p>
+<p>The following options are supported:</p>
+<ul>
+<li>raised</li>
+<li>floating</li>
+<li>flat</li>
+</ul>
+<p>This property defaults to "raised". To set the type, use the corresponding <code>TYPE_*</code> constant of this class.
+If no type from this range is given, the button will be of the "raised" type.</p>
+
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="macgyer-yii2materializecss-widgets-button.html#$type-detail">$type</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">TYPE_RAISED</span></div>
 
 </div>
 <h2>Method Details</h2>
@@ -422,7 +540,7 @@ yii\base\Widget</td></tr>
 
 <footer class="footer">
     <div class="wrap">
-                <p class="pull-right"><small>Page generated on Wed, 03 Aug 2016 21:05:12 +0000</small></p>
+                <p class="pull-right"><small>Page generated on Mon, 08 Aug 2016 19:35:05 +0000</small></p>
         Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>    </div>
 </footer>
 
