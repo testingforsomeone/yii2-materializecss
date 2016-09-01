@@ -34,7 +34,8 @@
     <div class="col-md-3">
                 <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-32" data-toggle="collapse" data-parent="#navigation">macgyer\yii2materializecss\assets <b class="caret"></b></a><div id="navigation-32" class="submenu panel-collapse collapse"><a class="list-group-item" href="./macgyer-yii2materializecss-assets-materializeasset.html">MaterializeAsset</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-assets-materializefontasset.html">MaterializeFontAsset</a>
-<a class="list-group-item" href="./macgyer-yii2materializecss-assets-materializepluginasset.html">MaterializePluginAsset</a></div>
+<a class="list-group-item" href="./macgyer-yii2materializecss-assets-materializepluginasset.html">MaterializePluginAsset</a>
+<a class="list-group-item" href="./macgyer-yii2materializecss-assets-timepickerasset.html">TimePickerAsset</a></div>
 <a class="list-group-item" href="#navigation-33" data-toggle="collapse" data-parent="#navigation">macgyer\yii2materializecss\lib <b class="caret"></b></a><div id="navigation-33" class="submenu panel-collapse collapse"><a class="list-group-item" href="./macgyer-yii2materializecss-lib-baseinputwidget.html">BaseInputWidget</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-lib-basewidget.html">BaseWidget</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-lib-html.html">Html</a>
@@ -56,7 +57,8 @@
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-activeform.html">ActiveForm</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-datepicker.html">DatePicker</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-submitbutton.html">SubmitButton</a>
-<a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-switchbutton.html">SwitchButton</a></div>
+<a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-switchbutton.html">SwitchButton</a>
+<a class="list-group-item" href="./macgyer-yii2materializecss-widgets-form-timepicker.html">TimePicker</a></div>
 <a class="list-group-item" href="#navigation-37" data-toggle="collapse" data-parent="#navigation">macgyer\yii2materializecss\widgets\grid <b class="caret"></b></a><div id="navigation-37" class="submenu panel-collapse collapse"><a class="list-group-item" href="./macgyer-yii2materializecss-widgets-grid-actioncolumn.html">ActionColumn</a>
 <a class="list-group-item" href="./macgyer-yii2materializecss-widgets-grid-gridview.html">GridView</a></div></div>    </div>
     <div class="col-md-9 api-content" role="main">
@@ -155,14 +157,14 @@ NavBar::end();
             <tr id="$fixed">
         <td><a href="macgyer-yii2materializecss-widgets-navbar.html#$fixed-detail">$fixed</a></td>
         <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
-        <td>The text of the brand or false if it's not used.</td>
+        <td>Whether the navbar content should be included in an inner div container which by default
+adds left and right padding.</td>
         <td><a href="macgyer-yii2materializecss-widgets-navbar.html">macgyer\yii2materializecss\widgets\NavBar</a></td>
     </tr>
             <tr id="$fixedContainerOptions">
         <td><a href="macgyer-yii2materializecss-widgets-navbar.html#$fixedContainerOptions-detail">$fixedContainerOptions</a></td>
-        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
-        <td>Whether the navbar content should be included in an inner div container which by default
-adds left and right padding.</td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>The HTML attributes of the fixed container.</td>
         <td><a href="macgyer-yii2materializecss-widgets-navbar.html">macgyer\yii2materializecss\widgets\NavBar</a></td>
     </tr>
             <tr id="$options">
@@ -342,9 +344,10 @@ You may set it to <code>null</code> if you want to have no link at all.</p>
     </div>
 
     <div class="doc-description">
-        <p>The text of the brand or false if it's not used. Note that this is not HTML-encoded.</p>
+        <p>Whether the navbar content should be included in an inner div container which by default
+adds left and right padding. Set this to false for a 100% width navbar.</p>
 
-        <p>See also <a href="http://materializecss.com/navbar.html">http://materializecss.com/navbar.html</a>.</p>    </div>
+            </div>
 
     <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <a href="macgyer-yii2materializecss-widgets-navbar.html#$fixed-detail">$fixed</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
 
@@ -359,12 +362,11 @@ You may set it to <code>null</code> if you want to have no link at all.</p>
     </div>
 
     <div class="doc-description">
-        <p>Whether the navbar content should be included in an inner div container which by default
-adds left and right padding. Set this to false for a 100% width navbar.</p>
+        <p>The HTML attributes of the fixed container.</p>
 
-            </div>
+        <p>See also <a href="http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#renderTagAttributes()-detail">\yii\helpers\Html::renderTagAttributes()</a> for details on how attributes are being rendered.</p>    </div>
 
-    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <a href="macgyer-yii2materializecss-widgets-navbar.html#$fixedContainerOptions-detail">$fixedContainerOptions</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <a href="macgyer-yii2materializecss-widgets-navbar.html#$fixedContainerOptions-detail">$fixedContainerOptions</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
 
 
     <div class="detail-header h3" id="$options-detail">
@@ -564,7 +566,7 @@ adds left and right padding. Set this to false for a 100% width navbar.</p>
 
 <footer class="footer">
     <div class="wrap">
-                <p class="pull-right"><small>Page generated on Mon, 08 Aug 2016 19:35:05 +0000</small></p>
+                <p class="pull-right"><small>Page generated on Thu, 01 Sep 2016 21:07:32 +0000</small></p>
         Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>    </div>
 </footer>
 
