@@ -63,10 +63,10 @@
         <div class="row">
             <hr>
             <div class="col l6 s12">
-                <p class="flow-text">Current release: <strong>1.5.0</strong></p>
+                <p class="flow-text">Current release: <strong>2.0.0</strong></p>
             </div>
             <div class="col l6 s12">
-                <p class="flow-text">Current Materialize version implemented: <strong>0.98.2</strong></p>
+                <p class="flow-text">Current Materialize version implemented: <strong>0.100.1</strong></p>
             </div>
             <hr>
         </div>
@@ -263,26 +263,27 @@
                         <li class="collection-item">ActiveField</li>
                         <li class="collection-item">ActiveForm</li>
                         <li class="collection-item">Alert</li>
-                        <li class="collection-item">Breadcrumbs</li>
+                        <li class="collection-item">Breadcrumbs<span class="badge updated">2.0.0</span></li>
                         <li class="collection-item">Button</li>
-                        <li class="collection-item">Carousel<span class="badge since">1.5.0</span></li>
+                        <li class="collection-item">Carousel</li>
                         <li class="collection-item">Chip</li>
+                        <li class="collection-item">Collapsible<span class="badge since">2.0.0</span></li>
                         <li class="collection-item">DatePicker</li>
                         <li class="collection-item">DetailView</li>
-                        <li class="collection-item">Dropdown</li>
                     </ul>
                 </div>
                 <div class="col l4 m4 s12">
                     <ul class="collection">
-                        <li class="collection-item">Fixed Action Button</li>
+                        <li class="collection-item">Dropdown<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">Fixed Action Button<span class="badge updated">2.0.0</span></li>
                         <li class="collection-item">GridView with ActionColumn</li>
                         <li class="collection-item">Icon</li>
                         <li class="collection-item">LinkPager</li>
-                        <li class="collection-item">MaterialBox<span class="badge since">1.5.0</span></li>
+                        <li class="collection-item">MaterialBox</li>
                         <li class="collection-item">Modal</li>
-                        <li class="collection-item">Nav</li>
-                        <li class="collection-item">NavBar</li>
-                        <li class="collection-item">Parallax<span class="badge since">1.5.0</span></li>
+                        <li class="collection-item">Nav<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">NavBar<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">Parallax</li>
                     </ul>
                 </div>
                 <div class="col l4 m4 s12">
@@ -290,12 +291,12 @@
                         <li class="collection-item">Progress</li>
                         <li class="collection-item">RangeInput</li>
                         <li class="collection-item">Select</li>
-                        <li class="collection-item">SideNav</li>
-                        <li class="collection-item">Slider<span class="badge since">1.5.0</span></li>
+                        <li class="collection-item">SideNav<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">Slider</li>
                         <li class="collection-item">Spinner</li>
                         <li class="collection-item">SubmitButton</li>
                         <li class="collection-item">SwitchButton</li>
-                        <li class="collection-item">TimePicker</li>
+                        <li class="collection-item">TimePicker<span class="badge updated">2.0.0</span></li>
                     </ul>
                 </div>
             </div>
@@ -343,7 +344,7 @@
             <h1>Known issues</h1>
 
             <p class="flow-text">
-                Despite the styling issues in Materialize v0.97.8. the dependency has been updated to v0.98.2.
+                Despite the styling issues in the side navigation overlay the dependency has been updated to v0.100.1.
                 <br>
                 See <a href="https://github.com/Dogfalo/materialize/issues/4046">Issue #4046</a> for details.
                 <br><br>
@@ -377,6 +378,16 @@
 
         <section id="changelog" data-materialize-scrollspy="true">
             <h1>Change log</h1>
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>2.0.0 - 2017-07-30</h5></li>
+
+                <li class="collection-item"><strong>Please note: this release contains breaking changes</strong></li>
+                <li class="collection-item">moved Breadcrumbs, Dropdown, FixedActionButton, Nav, NavBar and SideNav to dedicated namespace (<strong>breaking</strong>)</li>
+                <li class="collection-item">dropped chingyawhao/materialize-clockpicker in favor of Materialize native time picker implementation (<strong>breaking</strong>)</li>
+                <li class="collection-item">added Collapsible</li>
+                <li class="collection-item">updated Materialize to v0.100.1</li>
+            </ul>
+
             <ul class="collection with-header">
                 <li class="collection-header"><h5>1.5.0 - 2017-07-03</h5></li>
 
