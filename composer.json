@@ -1,5 +1,5 @@
 {
-    "name": "macgyer/yii2-materializecss",
+    "name": "irrahub/yii2-materializecss",
     "minimum-stability": "RC",
     "description": "Materialize CSS implementation for Yii2",
     "keywords": ["materialize", "yii2", "widgets", "material design"],
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "macgyer\\yii2materializecss\\": "src"
+            "irrahub\\yii2materializecss\\": "src"
         }
     }
 }
